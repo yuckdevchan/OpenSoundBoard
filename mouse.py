@@ -10,7 +10,7 @@ def play_random_sound():
     if sound_queue:
         sound = sound_queue.pop(0)
         subprocess.run(["echo", f"Playing: {sound}.mp3"])
-        subprocess.run(["echo", f"{sound}.mp3"])
+        subprocess.run(["mplayer", f"{sound}.mp3"])
     else:
         random.shuffle(sounds)
         sound_queue.extend(sounds)
