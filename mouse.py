@@ -2,7 +2,14 @@ import subprocess
 import random
 from pynput.mouse import Listener
 
-sounds = ["bruh", "obamna", "sus", "wah", "fazbear"]
+sounds = [
+    "bruh", 
+    "obamna", 
+    "sus", 
+    "wah", 
+    "fazbear"
+]
+
 sound_queue = sounds.copy()
 random.shuffle(sound_queue)
 
