@@ -29,6 +29,7 @@ def play_random_sound():
         sound_queue.extend(sounds)
 
 def on_click(x, y, button, pressed):
+    print("Mouse Click Detected...")
     if pressed:
         play_random_sound()
 
